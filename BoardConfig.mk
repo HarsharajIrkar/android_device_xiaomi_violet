@@ -12,6 +12,13 @@ DEVICE_PATH := device/xiaomi/violet
 # Inherit from sm6150-common
 include device/xiaomi/sm6150-common/BoardConfigCommon.mk
 
+# Camera
+TARGET_CAMERA_OVERRIDE_FORMAT_FROM_RESERVED := true
+MALLOC_SVELTE := true
+MALLOC_SVELTE_FOR_LIBC32 := true
+TARGET_USES_MIUI_CAMERA := true
+TARGET_USES_YCRCB_CAMERA_ENCODE := true
+
 # Audio
 AUDIO_FEATURE_ENABLED_GEF_SUPPORT := true
 AUDIO_FEATURE_ENABLED_INSTANCE_ID := true
